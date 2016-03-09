@@ -1,4 +1,70 @@
-h1 {
-  color: red; }
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.header {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/18041/finesseSampleImage-sm5.jpg") no-repeat center top;
+  background-size: 100%;
+  width: 100%;
+  height: 80vh; }
+  .header nav {
+    padding: 20px 40px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center; }
+    .header nav img {
+      width: 130px; }
+    .header nav .nav-links a {
+      padding: 20px 15px;
+      font-size: 16px; }
+  .header .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    color: white; }
+    .header .title h1 {
+      font-size: 7rem;
+      margin: 10px; }
+    .header .title h3 {
+      font-size: 1.7rem;
+      margin: 10px; }
+    .header .title button {
+      padding: 18px 20px 20px;
+      margin: 20px;
+      border: none;
+      background: rgba(255, 255, 255, 0.9);
+      font-size: 17px;
+      font-weight: 500;
+      color: #333;
+      letter-spacing: 0.5px;
+      text-transform: uppercase; }
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px; }
+  .articles .article {
+    min-width: 400px;
+    margin: 20px;
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column; }
+    .articles .article .image-container {
+      overflow: hidden; }
+      .articles .article .image-container img {
+        width: 100%; }
+    .articles .article h3 {
+      font-size: 28px;
+      margin: 10px 0; }
+    .articles .article p {
+      font-size: 17px;
+      line-height: 150%; }
 
 /*# sourceMappingURL=style.css.map */
